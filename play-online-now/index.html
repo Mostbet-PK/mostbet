@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure redirect to Mostbet</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="icon" type="image/webp" href="../assets/favicon.webp">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="redirect-page">
+  <div>
+    <div class="spinner"></div>
+    <h1>Opening <span style="color:var(--accent-soft)">Mostbet</span></h1>
+    <p>We will send you to the access page to continue with registration, casino or sports betting.</p>
+    <p>The redirect may take a few seconds.</p>
+    <div class="manual">If you are not redirected automatically, <a id="manual-link" href="#" rel="nofollow noopener noreferrer sponsored">use this manual link</a>.</div>
+  </div>
+</div>
+<script>
+(function () {
+  var REFERRAL_URL = 'https://r5qgx5qlynzhmst.com/tu6U';
+  try {
+    var currentParams = new URLSearchParams(window.location.search);
+    var passThrough = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','sub','sub_id','clickid','gclid'];
+    var url = new URL(REFERRAL_URL);
+    passThrough.forEach(function (k) {
+      if (currentParams.has(k) && !url.searchParams.has(k)) url.searchParams.set(k, currentParams.get(k));
+    });
+    REFERRAL_URL = url.toString();
+  } catch (e) { }
+  document.getElementById('manual-link').setAttribute('href', REFERRAL_URL);
+  setTimeout(function () { window.location.replace(REFERRAL_URL); }, 1500);
+})();
+</script>
+</body>
+</html>

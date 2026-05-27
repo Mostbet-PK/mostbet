@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /play-online-now/
+
+Sitemap: https://mostbet-pk.onrender.com/sitemap.xml
